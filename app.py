@@ -3,5 +3,10 @@
 from sections import about, projects, education, contact
 import streamlit as st
 
-st.text("Hello this is a test from streamlit")
 
+pages = {
+    "About Me" : about.show,
+}
+
+choice = st.sidebar.radio("Go to", list(pages.keys()))
+pages[choice]()
