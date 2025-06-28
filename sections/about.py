@@ -4,5 +4,15 @@ from utils.helpers import render_image
 
 def show():
     st.title("Ibrahim Aminu")
-    st.write("Hey, my name is Ibrahim. I'm a software engineer and process engineer passionate about computer vision and AI. Currently, I work at Boston Scientific, building proof-of-concept automation and vision systems, while pursuing my master's in Computer Vision and AI. I focus on using AI as a tool to build practical, impactful solutions, especially in robotics and medical imaging. Outside work, I enjoy learning new technologies, reading research papers, and contributing to community projects.")
-    render_image("assets/profile_header.png",300)
+    col1, col2 = st.columns([2, 1])
+    with col1:
+        st.write(
+            "Hey! I’m Ibrahim, a determined software engineer passionate about building practical, impactful solutions. "
+            "My favorite language is Python, and I love exploring AI, machine learning, computer vision, and software development. "
+            "I currently work at Boston Scientific and am also pursuing my master’s in Computer Vision and AI.\n\n"
+            "Check out my projects, education, and contact info to learn more!"
+        )
+
+    with col2:
+        render_image("assets/profile_header.png", 300)
+
