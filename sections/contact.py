@@ -1,4 +1,6 @@
-# Contact Details
+# Contacts
+
+import streamlit as st
 
 def show():
-    pass
+    st.title("Contact")

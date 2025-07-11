@@ -1,4 +1,6 @@
 # Projects list
 
+import streamlit as st
+
 def show():
-    pass
+    st.title("Project Portfolio")
