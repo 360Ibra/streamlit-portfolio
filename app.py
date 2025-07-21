@@ -8,7 +8,7 @@ pages = {
     "About Me" : about.show,
     "Projects": projects.show,
     "Education": education.show,
-    "Contact": contact.show
+    # "Contact": contact.show
 }
 
 choice = st.sidebar.radio("Go to", list(pages.keys()))
