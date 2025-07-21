@@ -4,23 +4,34 @@ from utils.helpers import render_image
 def show():
     st.title("Education")
 
-    mtu_modules = [
-        "Data Structures",
-        "Web Development",
-        "Object-Oriented Programming",
-        "Database Management",
-        "Mobile App Development",
-        "Software Testing",
-    ]
 
-    ul_modules = [
-        "INTRODUCTION TO SCIENTIFIC COMPUTING",
-        "INTRODUCTION TO DEEP LEARNING AND FRAMEWORKS ",
-        "Artificial Intelligence & Machine Learning ",
-        "DATA ANALYTICS",
-        "ADVANCED TOPICS SEMINARS AND PROJECT SPECIFICATION",
-        "RISK, ETHICS, GOVERNANCE AND ARTIFICIAL INTELLIGENCE",
-    ]
+    # Turn to dictionary and then use key to display mod and val to display module content
+
+    mtu_modules = {
+        "Machine Learning": "",
+        "Big Data & Analytics ": "",
+        "Programming for Data Analytics ": "",
+        "Probability and Statistics": "",
+        "Project - Research Phase": "",
+        "Introduction to Databases ": "",
+        "Data Structures & Algorithms":"",
+        "Maths for Computer Science  ":"",
+        "Object-Oriented Programming":"",
+        "Mobile App Development":"",
+        "Security for Software Systems ":"",
+        "Embedded Systems Engineering": "",
+        "C Programming": "",
+
+    }
+
+    ul_modules = {
+        "INTRODUCTION TO SCIENTIFIC COMPUTING":"",
+        "INTRODUCTION TO DEEP LEARNING AND FRAMEWORKS": "",
+        "Artificial Intelligence & Machine Learning":"",
+        "DATA ANALYTICS":"",
+        "ADVANCED TOPICS SEMINARS AND PROJECT SPECIFICATION":"",
+        "RISK, ETHICS, GOVERNANCE AND ARTIFICIAL INTELLIGENCE":"",
+    }
 
     def display_modules(title, caption, logo_path, modules):
         with st.container():
@@ -31,9 +42,9 @@ def show():
             with col2:
                 st.subheader(title)
                 st.caption(caption)
-                for mod in modules:
-                    with st.expander(f"📘 {mod}"):
-                        st.markdown(f"Description and learning outcomes for **{mod}** can be added here.")
+                for mod_key, mod_value in modules.items():
+                    with st.expander(f"📘 {mod_key}"):
+                        st.markdown(f"{mod_value}")
 
             st.divider()
 

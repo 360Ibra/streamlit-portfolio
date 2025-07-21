@@ -34,7 +34,7 @@ def show():
         Trained a deep learning model on the MPII dataset, converted it from PyTorch to ONNX and NCNN, 
         and deployed it with a cross-compiled MMDeploy library for Java integration.
         """,
-        video_url="https://youtu.be/your_demo_link",  # Replace with your real link
+        video_url="https://youtu.be/lIuqIB77Qig",  # Replace with your real link
         tags=["Python", "PyTorch", "ONNX", "NCNN", "Android", "CMake", "Computer Vision"]
     )
 
